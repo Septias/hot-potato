@@ -18,10 +18,10 @@ const router = createRouter({
   routes,
 })
 
-/* router.beforeEach(async(to, from, next) => {
+router.beforeEach(async(to, from, next) => {
   if (to.path !== '/login') {
     try {
-      await useUser()
+      // await useUser()
       next()
     }
     catch {
@@ -30,7 +30,7 @@ const router = createRouter({
   }
   else { next() }
 })
- */
+
 const i18n = createI18n({
   locale: 'en',
   messages,
